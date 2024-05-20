@@ -57,7 +57,7 @@ namespace ExamDemo
             db.SaveChanges();
             dbBook.ItemsSource = db.Books.ToList();
         }
-        //Удаление
+        //Удаление.
         private void Remove_Click(object sender, RoutedEventArgs e)
         {
             int sDid = Convert.ToInt32(id.Text);
