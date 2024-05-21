@@ -17,6 +17,7 @@
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Width="250" Height="200" Margin="0 70 50 0">
             <ComboBox x:Name="cbB" ItemsSource="{Binding}" SelectedValuePath="IdBook" DisplayMemberPath="Author" Width="200" Height="30"
                       Margin="20 0 0 0" SelectionChanged="cbB_SelectionChanged"/>
+            <TextBox x:Name="tbB" TextWrapping="Wrap" Text="" Width="200" Height="30" Margin="0 20 10 0" TextChanged="tbB_TextChanged"/>
         </StackPanel>
         <Button x:Name="Cancel" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="80" Height="30" 
                 Click="Can_Click">Назад</Button>

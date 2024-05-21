@@ -52,5 +52,10 @@ namespace ExamDemo
         {
             Navigation.frame.Navigate(new MiddlePage());
         }
+
+        private void tbB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            dbB.ItemsSource = db.Books.Where(x => x.NameBook.Contains(tbB.Text)).ToList();
+        }
     }
 }
